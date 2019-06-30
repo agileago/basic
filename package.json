@@ -46,9 +46,9 @@
   "scaffoldConfig": {
     "builder": "vue-cli-service",
     "type": "vue",
-    "name": "basic-template",
+    "name": "basic",
     "title": "vue基础模板",
-    "screenshot": "https://unpkg.com/@titanmatrix-materials/basic-template/screenshot.png"
+    "screenshot": "https://unpkg.com/@titanmatrix-materials/basic/screenshot.png"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org",
