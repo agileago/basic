@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Vue基础模板</title>
+    <% if(NODE_ENV === 'development') { %>
+    <script src="<%= BASE_URL %>framework/vue.js"></script>
+    <% } else { %>
+    <script src="<%= BASE_URL %>framework/vue.min.js"></script>
+    <% } %>
+    <script src="<%= BASE_URL %>framework/vuex.min.js"></script>
+    <script src="<%= BASE_URL %>framework/vue-router.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
