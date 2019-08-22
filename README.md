@@ -17,3 +17,9 @@ yarn run start
 ```bash
 yarn run build
 ```
+
+## 升级依赖
+
+```bash
+yarn upgrade-interactive --latest
+```
