@@ -6,12 +6,11 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Vue基础模板</title>
     <% if(NODE_ENV === 'development') { %>
-    <script src="<%= BASE_URL %>framework/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
     <% } else { %>
-    <script src="<%= BASE_URL %>framework/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
     <% } %>
-    <script src="<%= BASE_URL %>framework/vuex.min.js"></script>
-    <script src="<%= BASE_URL %>framework/vue-router.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-router@3.1.2/dist/vue-router.min.js"></script>
   </head>
   <body>
     <div id="app"></div>

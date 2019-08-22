@@ -1,6 +1,4 @@
-# vue基础模板
-
-具体文档请见 [文档](/materials/doc)
+# 前端基础模板
 
 ## 安装依赖
 
@@ -11,11 +9,11 @@ yarn
 ## 开发环境
 
 ```bash
-npm run start
+yarn run start
 ```
 
 ## 生产环境
 
 ```bash
-npm run build
+yarn run build
 ```

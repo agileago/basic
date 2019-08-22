@@ -28,8 +28,7 @@ module.exports = {
     // vue等资源直接在html里面cdn引入 必要时可替换成本地资源文件
     config.externals({
       'vue': 'Vue',
-      'vue-router': 'VueRouter',
-      'vuex': 'Vuex'
+      'vue-router': 'VueRouter'
     })
   },
   devServer: {
