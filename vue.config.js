@@ -32,6 +32,15 @@ module.exports = {
     })
   },
   devServer: {
-    disableHostCheck: true
+    disableHostCheck: true,
+    proxy: {
+      // '/api': {
+      //   target: 'http://192.168.1.199:12005',
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/api': ''
+      //   }
+      // }
+    }
   }
 }

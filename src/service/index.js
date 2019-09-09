@@ -11,3 +11,8 @@ export function post () {
   let data = {}
   return http.post(url, data)
 }
+
+export function getUser () {
+  let url = `/api/user`
+  return http.get(url)
+}
