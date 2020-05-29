@@ -16,7 +16,7 @@ Date.prototype.format = function (format) {
     'm+': this.getMinutes(), // minute
     's+': this.getSeconds(), // second
     'q+': Math.floor((this.getMonth() + 3) / 3), // quarter
-    'S': this.getMilliseconds() // millisecond
+    S: this.getMilliseconds(), // millisecond
   }
 
   if (/(y+)/.test(format)) {

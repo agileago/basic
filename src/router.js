@@ -5,7 +5,7 @@ import routes from '@/config/router.config'
 Vue.use(Router)
 
 const router = new Router({
-  routes
+  routes,
 })
 
 export default router

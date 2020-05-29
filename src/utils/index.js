@@ -1,6 +1,6 @@
-export function parseQuery (string) {
+export function parseQuery(string) {
   var parsed = {}
-  string = (string !== undefined) ? string : window.location.search
+  string = string !== undefined ? string : window.location.search
 
   if (typeof string === 'string' && string.length > 0) {
     if (string[0] === '?') {
@@ -32,7 +32,7 @@ export function parseQuery (string) {
 
   return parsed
 }
-export function stringfyQuery (obj) {
+export function stringfyQuery(obj) {
   var string = []
   if (typeof obj === 'object') {
     Object.keys(obj).forEach(function (key) {

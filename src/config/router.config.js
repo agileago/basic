@@ -3,12 +3,12 @@ import Home from '@/views/home'
 const routes = [
   {
     path: '/',
-    component: Home
+    component: Home,
   },
   {
     path: '/about',
-    component: () => import('@/views/about.vue')
-  }
+    component: () => import('@/views/about.vue'),
+  },
 ]
 
 export default routes

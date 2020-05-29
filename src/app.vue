@@ -5,7 +5,7 @@
       <router-link to="/about">关于</router-link>
       <button @click="getUser">mock用户</button>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
@@ -13,11 +13,11 @@
 import * as service from '@/service'
 export default {
   methods: {
-    async getUser () {
-      let user = await service.getUser()
+    async getUser() {
+      const user = await service.getUser()
       console.log(user)
-    }
-  }
+    },
+  },
 }
 </script>
 

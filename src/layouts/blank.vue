@@ -1,16 +1,14 @@
 <template>
-<div>
-  这里是layouts
-  <router-view></router-view>
-</div>
+  <div>
+    这里是layouts
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'basic-layout'
+  name: 'basic-layout',
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

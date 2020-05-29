@@ -2,23 +2,19 @@ import Vue from 'vue'
 
 const requireContext = require.context('./', true, /\.js$/)
 
-let allFiles = requireContext.keys().filter(checkFile)
+const allFiles = requireContext.keys().filter(checkFile)
 
-allFiles.forEach(path => {
+allFiles.forEach((path) => {
   const lib = requireContext(path)
-  Object.keys(lib).forEach(k => {
-    let item = lib[k]
+  Object.keys(lib).forEach((k) => {
+    const item = lib[k]
     Vue.directive(item.name, item)
   })
 })
 
-function checkFile (path) {
-  let level = path.split('/')
-  if (
-    level.length === 3 &&
-    level[1] !== 'module' &&
-    level[2] === 'index.js'
-  ) {
+function checkFile(path) {
+  const level = path.split('/')
+  if (level.length === 3 && level[1] !== 'module' && level[2] === 'index.js') {
     return true
   }
   return false

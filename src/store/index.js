@@ -1,7 +1,4 @@
 import Vue from 'vue'
-import installStore from './install'
-
-Vue.use(installStore)
 
 // 不使用vuex的原因
 // 有时在项目使用vuex导致控制全局状态过于繁琐
@@ -9,14 +6,12 @@ Vue.use(installStore)
 
 // 全局状态总线以及全局事件总线
 const store = new Vue({
-  data () {
+  data() {
     return {
-      state: {}
+      state: {},
     }
   },
-  methods: {
-
-  }
+  methods: {},
 })
 
 export default store
